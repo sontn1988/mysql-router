@@ -6,7 +6,7 @@ RUN curl -fSL -o mysql-router.deb 	http://dev.mysql.com/get/Downloads/MySQL-Rout
 
 RUN dpkg -i mysql-router.deb
 
-COPY docker-entrypoint /entrypoint.sh
+COPY docker-entrypoint.sh /entrypoint.sh
 
 RUN cat /entrypoint.sh
 
