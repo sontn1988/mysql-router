@@ -29,6 +29,6 @@ if [ "$REPLICATION" = "true" ] && [ ! -f /opt/router.ini ]; then
 	mode = read-only
 	destinations = $slave_destinations
 	EOL
-#fi
+fi
 
 exec "$@"
